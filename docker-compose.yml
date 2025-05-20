@@ -1,0 +1,9 @@
+services:
+  node-api:
+    build: .
+    container_name: node-api
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/app
+      - /app/node_modules
